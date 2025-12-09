@@ -1,0 +1,14 @@
+[
+    {"city": "Berlin", "country": "Germany", "filename": "berlin.json.bz2"},
+    {"city": "Cape Town", "country": "South Africa", "filename": "cape-town.json.bz2"},
+    {"city": "Dubai", "country": "United Arab Emirates", "filename": "dubai.json.bz2"},
+    {"city": "Mumbai", "country": "India", "filename": "mumbai.json.bz2"},
+    {"city": "Rio de Janeiro", "country": "Brazil", "filename": "rio-de-janeiro.json.bz2"},
+    {"city": "Singapore", "country": "Singapore", "filename": "singapore.json.bz2"},
+    {"city": "Cancun", "country": "Mexico", "filename": "cancun.json.bz2"},
+    {"city": "Colombo", "country": "Sri Lanka", "filename": "colombo.json.bz2"},
+    {"city": "Lima", "country": "Peru", "filename": "lima.json.bz2"},
+    {"city": "Nairobi", "country": "Kenya", "filename": "nairobi.json.bz2"},
+    {"city": "Seoul", "country": "South Korea", "filename": "seoul.json.bz2"},
+    {"city": "Sydney", "country": "Australia", "filename": "sydney.json.bz2"}
+]
