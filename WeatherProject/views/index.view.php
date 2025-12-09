@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php /* var_dump($info); */ ?>
     <?php
         $backgrounds = [
             'stormy' => 'images/stormy/bg.svg',
@@ -53,7 +52,6 @@
             <?php if (!empty($largeImage)): ?>
                 <img class="weather-info__image" src="<?php echo e($largeImage); ?>" alt="<?php echo e($info->weatherType); ?>" />
             <?php endif; ?>
-            <?php /* <h1 class="weather-info__temperature"><?php echo e($info->temperatureK); ?>K</h1> */ ?>
             <h1 class="weather-info__temperature">
                 <?php echo e($info->getFahrenheit()); ?>° / <?php echo e($info->getCelsius()); ?>°
             </h1>
