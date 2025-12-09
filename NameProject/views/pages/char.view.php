@@ -7,12 +7,6 @@
         </li>
     <?php endforeach; ?>
 </ul>
-<?php /*
-<?php
-$pagination = ['count' => 150, 'perPage' => 15];
-?>
-<?php var_dump(($pagination['count'] / $pagination['perPage'])); ?>
-*/ ?>
 <?php for($x = 1; $x < ($pagination['count'] / $pagination['perPage'] + 1); $x++): ?>
     <a class="button" href="char.php?<?php echo http_build_query(['char' => $char, 'page' => $x]); ?>">
         <?php if ($x === $pagination['page']): ?>
@@ -24,6 +18,5 @@ $pagination = ['count' => 150, 'perPage' => 15];
 <?php endfor; ?>
 <?php /*
 
-<?php var_dump($pagination); ?>
 */ ?>
 <br /><br /><br /><br /><br />
