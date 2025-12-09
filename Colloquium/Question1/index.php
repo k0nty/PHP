@@ -14,11 +14,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['_method']) && $_POST[
     $id = $_POST['id'];
     $body = $_POST['body'];
 
-    $sql = "UPDATE notes SET body = q_body WHERE id = q_id";
+    $sql = "UPDATE notes SET body = :q_body WHERE id = :q_id";
 
     $statement = $pdo->prepare($sql);
 
-    $statement->execute(['q_body' => $body,'q_id' => $id]);
+    $statement->execute([':q_body' => $body,':q_id' => $id]);
 }
 
 $stmt = $pdo->query("SELECT * FROM notes WHERE id = 1");
@@ -47,4 +47,5 @@ $note = $stmt->fetch();
         <p>запис не знайдено</p>
     <?php endif; ?>
 </body>
+
 </html>
